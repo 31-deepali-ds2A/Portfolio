@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("next").addEventListener("click", function () {
         moveSlides(1);
     });
+    console.log("Portfolio");
 });
 
  
