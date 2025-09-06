@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-     <!-- Link to Google Fonts -->
+    <title>HomePage</title>
+
+     <!-- Links -->
      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </head>
 <body>
-
+    <!-- Nav baar -->
     <header class="navbar">
         <nav class="nav-container">
             <div class="nav-logo">
@@ -18,12 +22,12 @@
             </div>
             <div class="nav-menu"> 
                 <ul>
-                    <li id="l1">Home</li>
-                    <li id="l2">Skills</li>
-                    <li id="l3">Education</li>
-                    <li id="l4">Projects</li>
-                    <li id="l5">Recommendations</li>
-                    <li id="l6">Contact</li>
+                    <li id="l1"><a href="index.html">Home</a></li>
+                    <li id="l2"><a href="skills.html">Skills</a></li>
+                    <li id="l3"><a href="#education">Education</a></li>
+                    <li id="l4"><a href="#projects">Projects</a></li>
+                    <li id="l5"><a href="#recommendations">Recommendations</a></li>
+                    <li id="l6"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -37,22 +41,31 @@
                     <img src="Images/Ellipse 15.png" alt="circle">
                 </div>
                 <div class="circle2">
-                    <img src="Images/Ellipse 12.png" alt="">
+                    <img src="Images/Ellipse 12.png" alt="circle">
                 </div>
+              
                 <div class="hero-content">
-                    <h1 class="hero-h1">I'm Rayan Adlrdard <br>
-                        <span class="role">Front-end</span> Developer
+                    <h1 class="hero-h1">I'm Deepali Gupta <br>
+                        <span class="role">Full-Stack</span> Developer
                     </h1>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                         Et, volutpat feugiat placerat lobortis. Natoque rutrum semper sed suspendisse 
-                         nunc lectus.</p>
+                    <p class="text">Full-stack developer skilled in building seamless web applications 
+                        with  technologies like React, Node.js, and MySQL. Passionate about crafting 
+                        user-friendly interfaces and efficient back-end systems for impactful solutions.</p>
                     <button class="button">HIRE ME
                     <img src="Images/arrow.png" alt="Icon" class="img"></button>
 
                 </div>
+                
+                <div class="triangle">
+                    <img src="Images/Rectangle 52.png" alt="triangle">
+                </div>
+                <div class="polygon">
+                    <img src="Images/Polygon 1.png" alt="Polygon">
+                </div> 
                 <div class="img-container">
                     <img src="Images/undraw_proud_coder_re_exuy 1.png" alt="group" class="img1">
                 </div>
+                
             </section>
         </div>
     </div>
@@ -63,8 +76,9 @@
             <div class="heading">
                 <h1>Projects</h1>
                 <div class="para">
-                    <p>Amet Minim Mollit Non Deserunt Ullamco Est Sit Aliqua Dolor Do Amet Sint. Velit 
-                        Officia Consequat Duis Enim Velit Mollit. Lorem Ipsum</p>
+                    <p>Built scalable web applications with seamless user interfaces and robust back-end
+                         functionality. Delivered impactful solutions through efficient database management and
+                          responsive front-end designs</p>
                 </div>
             </div>
             <div class="row1">
@@ -224,39 +238,312 @@
     <div class="recommendations">
         <section id="home">
             <div class="r1">
-                <h1> Recommendations
-                </h1>
+                <h2> Recommendations
+                </h2>
                 <div class="re-content">
                     <p>Amet Minim Mollit Non Deserunt Ullamco Est Sit Aliqua Dolor Do Amet Sint. Velit 
                         Officia Consequat Duis Enim Velit Mollit. Lorem Ipsum</p>
                 </div>
             </div>
-        </section>
-    </div>
-    
 
-    <!-- Contact Information -->
-    <div class="contact">
-        <section id="home">
-            <h1>contact Section</h1>
+            <div class="carousel-wrapper">
+                <!-- Carousel Wrapper -->
+                <div class="carousel-container">
+                    <!-- Slide 1 -->
+                    <div class="carousel-slide">
+                        <div class="card">
+                            <div class="stars">
+                                &#9733;&#9733;&#9733;&#9733;&#9733;
+                            </div>
+                            <h3>Great Quality!</h3>
+                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet....</p>
+                            <div class="profile">
+                                <img src="Images/Profile.png" alt="Profile Image">
+                                <div class="name-designation">
+                                    <h4>James Gouse</h4>
+                                    <p>Graphic Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-slide">
+                        <div class="card">
+                            <div class="stars">
+                                &#9733;&#9733;&#9733;&#9733;&#9733;
+                            </div>
+                            <h3>Amazing Work!</h3>
+                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet....</p>
+                            <div class="profile">
+                                <img src="Images/Profile (1).png" alt="Profile Image">
+                                <div class="name-designation">
+                                    <h4>Tiana Philips</h4>
+                                    <p>Photographer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3-->
+                    <div class="carousel-slide">
+                        <div class="card">
+                            <div class="stars">
+                                &#9733;&#9733;&#9733;&#9733;&#9733;
+                            </div>
+                            <h3>Great Quality!</h3>
+                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet....</p>
+                            <div class="profile">
+                                <img src="Images/Profile (2).png" alt="Profile Image">
+                                <div class="name-designation">
+                                    <h4>Tiana Philips</h4>
+                                    <p>Photographer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="carousel-slide">
+                        <div class="card">
+                            <div class="stars">
+                                &#9733;&#9733;&#9733;&#9733;&#9733;
+                            </div>
+                            <h3>Amazing Work!</h3>
+                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet....</p>
+                            <div class="profile">
+                                <img src="Images/Profile.png" alt="Profile Image">
+                                <div class="name-designation">
+                                    <h4>Tiana Philips</h4>
+                                    <p>Photographer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="carousel-slide">
+                        <div class="card">
+                            <div class="stars">
+                                &#9733;&#9733;&#9733;&#9733;&#9733;
+                            </div>
+                            <h3>Great Quality!</h3>
+                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet....</p>
+                            <div class="profile">
+                                <img src="Images/Profile (1).png" alt="Profile Image">
+                                <div class="name-designation">
+                                    <h4>Tiana Philips</h4>
+                                    <p>Photographer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            
+                <!-- Navigation Arrows -->
+                <a class="prev" id="prev" click="moveSlides(-1)">&#10094;</a>
+                <a class="next"  id="next" click="moveSlides(1)">&#10095;</a>
+            </div>
+            
+            <!-- Dots (Indicators) -->
+            <div class="carousel-indicators">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+
+            </div>
         </section>
     </div>
 
     <!-- Leave Me Your Info Section -->
-    <div class="info">
-        <section id="home">
-            <h1>info Section</h1>
-        </section>
+    <div class="form-section">
+        <div class="col info"><h1>
+            Leave ME Your Info 
+        </h1>
+        <form action="#" method="post" class="info-form">
+            <!-- Full Name Field -->
+            <div class="form-group">
+                <label for="fullname">Your Full Name (required)</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email">Your Email (required)</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Subject Field -->
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject">
+            </div>
+
+            <!-- Message Field -->
+            <div class="form-group">
+                <label for=" message"> Your Message</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <input type="submit" value="Send Message">
+            </div>
+        </form>
     </div>
+        <div class="col contact"><h1>
+            Contact Information
+        </h1> 
+        <div class="box">
+            <div class="Ellipse">
+                <img src="Images/Ellipse 41.png" alt="Ellipse">
+                <!-- overlay-img -->
+                <img src="Images/location.png" alt="location" class="overlay-img">
+            </div>
+            <div class="c">
+                <div class="location">
+                    <span class="left" >Country:</span>
+                    <span class="right" id="i1">Bangladesh</span>
+                </div>
+                <div class="location">
+                    <span class="left">City:</span>
+                    <span class="right" id="i2">Dhaka</span>
+                </div>
+                <div class="location">
+                    <span class="left">Street:</span>
+                    <span class="right" id="i3">35Vhatara,Badda</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="Ellipse">
+                <img src="Images/Ellipse 41.png" alt="Ellipse">
+                <!-- overlay-img -->
+                <img src="Images/mail.png" alt="mail" class="overlay-img">
+            </div>
+            <div class="c">
+                <div class="location">
+                    <span class="left">Email:</span>
+                    <span class="right" id="i4">Youremail@Gmail.com</span>
+                </div>
+            <div class="location">
+                <span class="left">Skype:</span>
+                <span class="right" id="i5">@Yourusername</span>
+            </div>
+            <div class="location">
+                <span class="left">Telegram:</span>
+                <span class="right" id="i6">@Yourusername</span>
+            </div>
+            </div>
+          
+        </div>
+        <div class="box">
+            <div class="Ellipse">
+                <img src="Images/Ellipse 41.png" alt="Ellipse">
+                <!-- overlay-img -->
+                <img src="Images/Mobile.png" alt="mobile" class="overlay-img">
+            </div>
+            <div class="c">
+                <div class="location">
+                    <span class="left">Support Services:</span>
+                    <span class="right" id="i7">15369</span>
+                </div>
+            <div class="location">
+                <span class="left">Office:</span>
+                <span class="right" id="i8" style="white-space: pre;">+58 (021) 356 587 235</span>
+            </div>
+            <div class="location">
+                <span class="left">Personal:</span>
+                <span class="right" id="i9" style="white-space: pre;">+58 (021) 356 587 235</span>
+            </div>
+        </div>
+    </div>
+      </div>
     
+
+
     <!-- Footer -->
     <div class="footer">
         <section id="home">
-            <h1>footer Section</h1>
-        </section>
-    </div>
-    
+            
+            <div class="frames">
+                <div class="f">
+                    <img src="Images/Frame.png" alt="f3">
+                </div>
+                <div class="f">
+                    <img src="Images/Frame (1).png" alt="f1">
+                </div>
+                <div class="f">
+                    <img src="Images/Frame (2).png" alt="f2">
+                </div>
+                <div class="f">
+                    <img src="Images/Frame (3).png" alt="f3">
+                </div>
+            </div>
 
-    <script src="scripts.js"></script>
+            <div class="footer-logos">
+                <div class="rectangle">
+                    <img src="Images/Rectangle 181.png" alt="Rectangle">
+                </div>
+                <div class="frame270">
+                    <div class="child1">
+                        <div class="ratings">
+                            <img src="Images/Rectangle 97.png" alt="rec97">
+                            <p>4.5/5 rating on Lorem</p>
+                        </div>
+                      
+                        <div class="ratings">
+                            <img src="Images/Rectangle 99.png" alt="re99">
+                            <p>9/10 rating on Ipsum</p>
+                        </div>
+                     
+                        <div class="ratings">
+                            <img src="Images/Rectangle 100.png" alt="re100">
+                            <p>4.5/5 Rating on dorel</p>
+                        </div>
+                      
+                    </div>
+                    <div class="child2">
+                        <div class="quick-links">
+                            <span>Quick Links</span>
+                            <div class="links ">Home</div>
+                            <div class="links " >Skills</div>
+                            <div class="links ">Education</div>
+                            <div class="links ">Project</div>
+                            <div class="links ">Recommendations</div>
+                        </div>
+                        <div class="portfolio">
+                            <span>Portfolio</span>
+                            <div class="tech">Frontend Development</div>
+                            <div class="tech">Backend Development</div>
+                            <div class="tech">Website Design</div>
+                            <div class="tech">Machine Learning</div>
+                            <div class="tech">Problem solving & DSA</div>
+                        </div>
+                        <div class="connect">
+                            <span>Connect</span>
+                            <div class="linkedin">
+                                <img src="Images/LinkedIn.png" alt="linkedin">
+                            </div>
+                            <div class="insta">
+                                <img src="Images/Instagram.png" alt="insta">
+                            </div>
+                            <div class="fb">
+                                <img src="Images/Facebook.png" alt="fb">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="copyright">
+                       <p>   &copy; 2024 Copyright, All Rights Reserved.</p>
+                    </div>
+                </div>
+            </section>
+        </div> 
+
+    <script src="script.js"></script>
 </body>
 </html>
